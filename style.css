@@ -1,0 +1,65 @@
+.barraprincipal{
+	background-color: blue;
+    height: 60px;
+    width: 988px;
+    margin-top: -26px;
+    margin-left: -8px;
+}
+
+
+#tablero {
+    margin-top: 26px;
+    margin-left: 74px;
+}
+#buscador {
+	margin-top: 26px;
+    margin-left: 13px;
+}
+
+#trell {
+	margin-top: 26px;
+    margin-left: 13px;
+}
+#mas {
+	margin-top: 26px;
+    margin-left: 833px;
+}
+#info {
+    margin-top: -19px;
+    margin-left: 866px;
+}
+#bell {
+	margin-top: -17px;
+    margin-left: 902px;
+}
+ #user {
+ 	margin-top: -17px;
+    margin-left: 936px
+ }
+
+
+ #users {
+ 	margin-left: 12px;
+    margin-top: 12px;
+    font-size: 31px;
+    color: gainsboro;
+ }
+ p {
+    margin-left: 58px;
+    margin-top: -21px;
+    font-size: 15px;
+ }
+  
+ #form {
+ 	background-color: gainsboro;
+ 	height: 80px;
+ 	width: 300px;
+
+ }
+ #guarda:hover {
+ 	background-color: blue;
+	color: white;
+	border-radius: 7px;
+	margin: 1em 2em;
+
+ }
