@@ -6,60 +6,185 @@
     margin-left: -8px;
 }
 
+.trello {
+    font-family: 'Oleo Script', cursive;
+    margin-top: -39px;
+    margin-left: 452px;
+    font-size: 29px;
+    opacity: 0.5;
+    color: white;
 
+
+}   
+.trello2{
+    margin-top: -47px;
+    margin-left: 413px;
+    font-size: 36px;
+    opacity: 0.5;
+    color: white;
+}
 #tablero {
     margin-top: 26px;
     margin-left: 74px;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
 }
 #buscador {
-	margin-top: 26px;
+    margin-top: -32px;
     margin-left: 13px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
 }
 
 #trell {
 	margin-top: 26px;
     margin-left: 13px;
+    font-size: 36px;
+    color: white;
 }
 #mas {
-	margin-top: 26px;
+	margin-top: 12px;
     margin-left: 833px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5
 }
 #info {
-    margin-top: -19px;
-    margin-left: 866px;
+    margin-top: -98px;
+    margin-left: 855px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
 }
 #bell {
-	margin-top: -17px;
-    margin-left: 902px;
+	margin-top: -40px;
+    margin-left: 895px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
 }
  #user {
- 	margin-top: -17px;
-    margin-left: 936px
+ 	margin-top: -43px;
+    margin-left: 940px;
+    font-size: 36px;
+    color: white;
+    opacity: 0.5;
  }
 
 
  #users {
  	margin-left: 12px;
     margin-top: 12px;
-    font-size: 31px;
+    font-size: 35px;
     color: gainsboro;
  }
  p {
+
     margin-left: 58px;
     margin-top: -21px;
     font-size: 15px;
+    font-family: 'Oleo Script', cursive;
  }
-  
- #form {
+
+ #btn{
+    background-color: palegreen;
+    color: dimgray;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: left;
+    float: left;
+    margin-right: 20px;
+ }
+  #btn:hover{
+    background-color: #59F859;
+    cursor: pointer;
+  }
+
+#cont{
+    margin: 0 10px;
+    padding-top: 80px;
+    white-space: nowrap;
+}
+ #formu {
  	background-color: gainsboro;
  	height: 80px;
  	width: 300px;
 
  }
- #guarda:hover {
- 	background-color: blue;
-	color: white;
-	border-radius: 7px;
-	margin: 1em 2em;
+
+ #tarjeta {
+   display:block;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    width: 90%;
+    padding: 0 10px;
+ }
+ #form {
+
+    background-color: gainsboro;
+    height: 80px;
+    width: 300px;
+
+}
+#btnguardar{
+    background-color: palegreen;
+    color: dimgray;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: left;
+    float: left;
+    margin-right: 20px;
+ }
+
+ #btnguardar:hover {
+    background-color: #59F859;
+    cursor: pointer;
 
  }
+
+#cont-formulario {
+    display: inline-block;
+    vertical-align: top;
+}
+.azul{
+    background-color: #60BDAF;
+    padding: 18px;
+    border-radius: 5px;
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+}
+#btnGuardar, .btnAnadir{
+    background-color: #F88AAF;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    display: inline;
+}
+#btnGuardar:hover, .btnAnadir:hover{
+    background-color: #B96783;
+}
+.textarea{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+.gray{
+    background-color: gray;
+}
+
+.green{
+    background-color: lightseagreen;
+}

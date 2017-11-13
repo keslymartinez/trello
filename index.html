@@ -4,18 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Trello</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 	 <header>
  <div class="barraprincipal">
+ 
 	<div id="tablero"><i class="fa fa-search" aria-hidden="true"></i></div>
  	<div id="buscador"><i class="fa fa-trello" aria-hidden="true"></i></div>
- 	<div id=" trell"></div>
+ 	
  	<div id="mas"><i class="fa fa-plus-square-o" aria-hidden="true"></i></div>
  	<div id="info"><i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
  	<div id="bell"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
  	<div id="user"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+ 	<div class="trello2"><i class="fa fa-trello" aria-hidden="true"></i></div>
+ 	<p class="trello">Trello</p>
  </div>
  </header>
 
@@ -25,16 +28,17 @@
 	<p>tableros personales</p>
 	
 </div>
-<div class="conten"></div>
-
-<form id=form>
-	<input  id=tarjet placeholder="agrega una lista...">
-	<button id="guarda">Guardar</button>
-</form>
-
+<div id="cont">
+	<div id="cont-formulario">
+		<button id="btn">agrega una tarjeta...</button>
+		<form id="formu" class="azul">
+			<input id="tarjeta" placeholder = "agregar una tarjeta...">
+			<button id="btnguardar">Guardar</button>
+		</form>
+	</div>
 </div>
-</div>
+
 <script src="https://use.fontawesome.com/95443e83a8.js"></script>
-<script src="app.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
