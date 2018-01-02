@@ -1,190 +1,236 @@
-.barraprincipal{
-	background-color: blue;
-    height: 60px;
-    width: 988px;
-    margin-top: -26px;
-    margin-left: -8px;
-}
-
-.trello {
-    font-family: 'Oleo Script', cursive;
-    margin-top: -39px;
-    margin-left: 452px;
-    font-size: 29px;
-    opacity: 0.5;
-    color: white;
-
-
-}   
-.trello2{
-    margin-top: -47px;
-    margin-left: 413px;
-    font-size: 36px;
-    opacity: 0.5;
-    color: white;
-}
-#tablero {
-    margin-top: 26px;
-    margin-left: 74px;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-}
-#buscador {
-    margin-top: -32px;
-    margin-left: 13px;
-    font-size: 36px;
-    color: white;
-    opacity: 0.5;
-}
-
-#trell {
-	margin-top: 26px;
-    margin-left: 13px;
-    font-size: 36px;
-    color: white;
-}
-#mas {
-	margin-top: 12px;
-    margin-left: 833px;
-    font-size: 36px;
-    color: white;
-    opacity: 0.5
-}
-#info {
-    margin-top: -98px;
-    margin-left: 855px;
-    font-size: 36px;
-    color: white;
-    opacity: 0.5;
-}
-#bell {
-	margin-top: -40px;
-    margin-left: 895px;
-    font-size: 36px;
-    color: white;
-    opacity: 0.5;
-}
- #user {
- 	margin-top: -43px;
-    margin-left: 940px;
-    font-size: 36px;
-    color: white;
-    opacity: 0.5;
- }
-
-
- #users {
- 	margin-left: 12px;
-    margin-top: 12px;
-    font-size: 35px;
-    color: gainsboro;
- }
- p {
-
-    margin-left: 58px;
-    margin-top: -21px;
-    font-size: 15px;
-    font-family: 'Oleo Script', cursive;
- }
-
- #btn{
-    background-color: palegreen;
-    color: dimgray;
-    border: 0;
-    padding: 12px;
-    border-radius: 5px;
-    width: 250px;
-    text-align: left;
-    float: left;
-    margin-right: 20px;
- }
-  #btn:hover{
-    background-color: #59F859;
-    cursor: pointer;
-  }
-
-#cont{
-    margin: 0 10px;
-    padding-top: 80px;
-    white-space: nowrap;
-}
- #formu {
- 	background-color: gainsboro;
- 	height: 80px;
- 	width: 300px;
-
- }
-
- #tarjeta {
-   display:block;
-    height: 35px;
-    border-radius: 5px;
-    border: 0;
-    width: 90%;
-    padding: 0 10px;
- }
- #form {
-
-    background-color: gainsboro;
-    height: 80px;
-    width: 300px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 
 }
-#btnguardar{
-    background-color: palegreen;
-    color: dimgray;
-    border: 0;
-    padding: 12px;
-    border-radius: 5px;
-    width: 250px;
-    text-align: left;
-    float: left;
-    margin-right: 20px;
- }
 
- #btnguardar:hover {
-    background-color: #59F859;
-    cursor: pointer;
-
- }
-
-#cont-formulario {
-    display: inline-block;
-    vertical-align: top;
-}
-.azul{
-    background-color: #60BDAF;
-    padding: 18px;
-    border-radius: 5px;
-    width: 220px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-}
-}
-#btnGuardar, .btnAnadir{
-    background-color: #F88AAF;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 8px 10px;
-    cursor: pointer;
-    display: inline;
-}
-#btnGuardar:hover, .btnAnadir:hover{
-    background-color: #B96783;
-}
-.textarea{
+header{
     width: 100%;
-    height: 100px;
+    height: 83px;
+    background: rebeccapurple;
+}
+
+.barraPrincipal{
+    height: 66px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 35px;
+    display: inline-block;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+    width: 288px;
+    font-size: 12px;
+}
+
+}
+.uno{
+    width: 40px;
+    margin-top:35px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-top:35px;
+}
+header div p{
+    display: inline;
+    padding-left: 10px;
+}
+
+.fa{
+    color: white;
+    padding-left: 10px;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+#buscador{
+    background: #67A6CA; 
+    border-style: none; 
+    margin-top: -5px;
+    height: 30px;
+}
+
+.principal{
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    position: relative;
+    margin-left: 140px;
+    margin-top: 20px;
+    background: url(../assets/img/trello-logo-white.svg);
+    background-size: cover;
+}
+
+.iconsNav{
+    display: inline-block;
+    outline: 2px solid white;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+
+.rightFloat{
+    float: right;
+    margin-right: 100px;
+}
+
+.parte2{
+    background: #67A6CA; 
+    height: 800px;
+    width: 100%;
+}
+
+.tablero{
     display: block;
 }
-.gray{
-    background-color: gray;
+
+.tablero h2{
+    padding-left: 50px;
+    padding-top: 30px; 
+    letter-spacing: 1px;
+    display: inline-block;
+}
+.tablero p {
+    display: inline-block;
+    width: 99px;
+    padding-left: 15px;
+}
+.tablero hr{
+    padding-top: 10px;
+}
+#tarjeta{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 40px; 
+    width: 250px;
+    background: #005485; 
+    border-style: none;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 30px; 
+    color:#E1E1E1;
 }
 
-.green{
-    background-color: lightseagreen;
+#tarjeta:hover{
+    background: #025F96; 
+    color: white; 
+    cursor: pointer;
+    font-size: 13px;
 }
+
+
+.input{
+    background: #D6D8DA; 
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border-style: none;
+    width: 350px; 
+    height: 40px;
+    margin-left: 10px; 
+}
+
+.input::placeholder{
+    padding-left: 10px;
+    color:black;
+}
+
+#btnGuardar{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100px; 
+    height: 35px;
+    background: #519839 ; 
+    border-radius: 5px; 
+    border-style: none;
+}
+
+#cuadro{
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+
+#agrega{
+    padding-top: 20px;
+    padding-left: 10px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    color: #B1B1B1; 
+}
+
+h4{
+    margin-top: 10px;
+    color: black; 
+    font-size: 16px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+/* clases js*/ 
+
+.noShow{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.conten-2{
+    height: auto; 
+    width: 380px; 
+    background: #E2E4E6;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: black; 
+    border-radius: 5px;
+}
+
+.textAreaTarea{
+    height: 70px; 
+    width: 350px; 
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #1C1059;
+}
+
+.btnAñadir{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100px; 
+    height: 35px;
+    background: #519839 ; 
+    border-radius: 5px; 
+    border-style: none;
+}
+
+.newForm{
+    height: auto; 
+    width: 400px;  
+    background-color: #E1E1E1;  
+    display: inline-block; 
+    margin-left: 30px;
+    border-radius: 5px; 
+
+}
+
+.nuevaTarea{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #1C1059;
+    font-size: 13px;
+    border-style: solid;
+    border-radius:5px;
+    border-color:#C1BFBF ; 
+    border-width: 1px;
+    margin-left: 10px;
+    margin-right: 20px;

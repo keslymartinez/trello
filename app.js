@@ -1,134 +1,84 @@
-window.addEventListener("load", function(){
-function add(){
-	var contar =1;
-
-	var cont = document.getElementById("cont");
-	
-	var btn = document.getElementById("btn");
-
-	var inp = document.getElementById("tarjeta");
-
-	var formulario = document.ElementById("cont-formulario")
-
-    var inpu = document.getElementById("inpu");
- 
-    var  formu =document.getElementById("formu");
-
-    formu.style.display="none";
-    btn.addEventListener("click",agregarTarjeta);
-    function agregarTarjeta(e) {
-		e.preventDefault();
-		btn.style.display="none";
-		formu.style.display="inline-block";
-		inp.value= "";
-		inp.focus();
-
-	}
 
 
 
+var btn= document.getElementById('tarjeta'); 
+btn.addEventListener("click", function(){Formulario()}); 
 
-	var guardar = documentElementById("btnguardar");
-	guardar.addEventListener("click",nuevaTarea);
-	function nuevaTarea(e){  
-		e.preventDefault();
-		formu.style.display="none";//Cancela el evento si este es cancelable
-		var inp = document.getElementById("tarjeta").value;
-		var inpu = document.createElement("div");
-		inpu.classList.add("azul");
-		var texto  = document.createElement("div"); 
-		texto.innerHTML = inp;
-		texto.classList.add("texto");
-		cont.insertBefore(inpu,cont.lastElementChild);
-		inpu.appendChild("texto");
-		var agregarNew =document.createElement("div");
-		agregarNew.innerHTML = ("agrega un nueva tarea");
-		agregarNew.classList.add("agregarNewTexto");
-		inpu.appendChild("agregarNewTexto");
-		var array =document.querySelectorAll(".agregarNewTexto");
-		btn.style.display="inline-block";
-		var newtext = creartext("agregarNewTexto");
-		array[array.length-1].addEventListener("click",function() {
-			this.style.display="none";
- 			this.nextElementSibling.style.display=null;
- 			this.nextElementSibling.firstElementChild.focus();
-
- 			
-
-		});
-
-		inpu.addEventListener("drop",ondropLista);
-		inpu.addEventListener("dragover",ondragoverLista);
-		inpu.addEventListener("dragleave",ondragleaveLista);
-
-
-
-	}
-
-	function newFormulario (inpu,a){
-	var formu = document.createElement("formu");
-	inpu.appendChild(formu);
-	var textArea = documentCreateElement("textarea");
-	textArea.classList.add(textArea);
-	form.appendChild(textArea);
-	var guardar = document.CreateElement("button");
-	buttonGuardarTareaClassList.add("btnAnadir");
-	buttonGuardarTarea.innerHTML = "guardar";
-	form.appendChild("botonGuardarTarea");
-	form.lastElementChild.addEventListener('click' function (e){
-		e.preventDefault();
-		form.previousElementSibiling.style.display=null;
-		var tex = document.createElement("div");
-		tex.classList.add("Nueva");
-		tex.setAttribute("dragabble","true");
-		tex.id= "inp"+contar;
-		tex.innerHTML = textArea.value;
-		tareas.insertBefore(tex,a);
-		textArea.value="";
-		formu.style.display="none";
-		contar++;
-
-		tex.addEventListener("dragstart",ondragstart);
-		tex.addEventListener("dragend",ondragend);
-		tex.addEventListener("dragover",ondragover);
-		tex.addEventListener("drop",ondrop);
-		function ondragstart(e){
-			this.classList.add("gray");
-			e.dataTransfer.setData("conten", e.target.id);
-		}
-		function ondragover(e){
-			e.preventDefault();
-			
-		}
-		function ondrop(e){
-			this.parentElement.classList.remove("green")
-			var id = e.dataTransfer.getData("conten");
-			this.parentElement.insertBefore(document.getElementById(id), this.nextElementSibling);
-			e.stopPropagation();
-		}
-
-		function ondragend(e){
-			this.classList.remove("gray");
-			this.classList.add("animated","swing");
-
-		}
-
-	});
-
-}
-		function ondropLista(e){
-			var id = e.dataTransfer.getData("conten");
-			this.insertBefore(document.getElementById(id), this.firstElementChild.nextElementSibling);
-			this.classList.remove("green");
-		}
-		function ondragoverLista(e){
-			e.preventDefault();
-			this.classList.add("green");
-
-		}
-		function ondragleaveLista(e){
-			this.classList.remove("green");
-		}
+function Formulario(){
+	var cont=document.getElementById("conten-formulario"); 
+	var btn= document.getElementById('tarjeta'); 
+	//añadiendo clase que desaparece el elemento 
+	btn.classList.add("noShow"); 
+	// agregar clase que muestre el elemento formu 
+	var formulario=document.getElementById("formu"); 
+	formulario.classList.remove("noShow"); 
+	formulario.classList.add("show"); 
+	cont.classList.add("cont-dos"); 
 };
 
-	// falta guardar en otro div la caja nueva
+
+function nuevaTarjeta(event){
+	var formu=document.getElementById('formu'); 
+
+	var parte2=document.getElementsByClassName('parteDos')[0]; 
+	var nuevoformulario=document.createElement("dos"); 
+
+	nuevoformulario.appendChild(formu); 
+	parte2.appendChild(nuevoformulario); 
+	nuevoformulario.classList.add("nuevoformulario");  
+	var conten=document.getElementById("conten-formulario");
+	conten.classList.add("noShow"); 
+	var nuevoDiv=document.getElementById("cuadro"); 
+	nuevoDiv.classList.remove("noShow")
+	nuevoDiv.classList.add("show"); 
+	var cardName= document.getElementById('input').value;
+	document.getElementById('input').value="";
+	var txtTitulo=document.createTextNode(cardName); 
+	var titulo=document.createElement("h4"); 
+	var tituloNuevo=document.getElementById("tituloNuevo"); 
+	var Cuadro=document.getElementById("cuadro");
+	var agrega=document.getElementById("agrega");
+	titulo.appendChild(txtTitulo); 
+	tituloNuevo.appendChild(titulo);
+	nuevoCuadro.appendChild(tituloNuevo); 
+
+	nuevoCuadro.insertBefore(tituloNuevo, agrega);
+}
+ 
+
+var btnGuardar=document.getElementById("btnGuardar"); 
+btnGuardar.addEventListener("click", function(){nuevaTarjeta()});
+
+function nuevoTextArea(){
+	var newTextArea=document.createElement("textarea");
+	newTextArea.classList.add("textAreaTarea"); 
+	newTextArea.setAttribute("id","tareaPorHacer");
+	var nuevoBtn=document.createElement("BUTTON");
+	var txtButton=document.createTextNode("Añadir"); 
+	nuevoBtn.classList.add("btnAñadir"); 
+	nuevoBtn.setAttribute("id", "botonAnadir");
+	nuevoBtn.setAttribute("onclick", "nuevaTarea()");
+	var cont=document.getElementById("cuadro"); 
+	var agrega=document.getElementById("agrega");
+	cont.removeChild(agrega); 
+	nuevoBtn.appendChild(txtButton); 
+	cont.appendChild(newTextArea); 
+	cont.appendChild(nuevoBtn); 
+
+}; 
+	var mensajeAgregar= document.getElementById("agrega"); 
+	mensajeAgregar.addEventListener('click', function(){nuevoTextArea()});
+function nuevaTarea(){
+		var nuevaTarea=document.createElement("p"); 
+		var txtNuevaTarea=document.getElementById("tareaPorHacer").value; 
+		document.getElementById("tareaPorHacer").value="";
+		var nodoTarea=document.createTextNode(txtNuevaTarea); 
+		var padreTarea=document.getElementById("cuadro"); 
+		var cajatextarea= document.getElementById("tareaPorHacer"); 
+		nuevaTarea.classList.add("nuevaTarea");
+		nuevaTarea.appendChild(nodoTarea); 
+		padreTarea.appendChild(nuevaTarea);
+
+		padreTarea.insertBefore(nuevaTarea,cajatextarea);
+
+	};	

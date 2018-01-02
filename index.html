@@ -4,41 +4,61 @@
 	<meta charset="UTF-8">
 	<title>Trello</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://use.fontawesome.com/95443e83a8.js"></script>
 </head>
 <body>
-	 <header>
- <div class="barraprincipal">
- 
-	<div id="tablero"><i class="fa fa-search" aria-hidden="true"></i></div>
- 	<div id="buscador"><i class="fa fa-trello" aria-hidden="true"></i></div>
- 	
- 	<div id="mas"><i class="fa fa-plus-square-o" aria-hidden="true"></i></div>
- 	<div id="info"><i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
- 	<div id="bell"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
- 	<div id="user"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
- 	<div class="trello2"><i class="fa fa-trello" aria-hidden="true"></i></div>
- 	<p class="trello">Trello</p>
- </div>
- </header>
+	<header>
+		<div class="barraPrincipal">
+			<i class="fa fa-trello" aria-hidden="true"></i>
+			<p>Tableros</p>
+		</div>
+		<div class="barraPrincipal">
+			<input type="text" name="search" id="buscador">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+
+		<div class="barraPrincipal principal"> </div>
+			<div class="rightFloat">
+				<div class="barraPrincipal uno"><i class="fa fa-plus" aria-hidden="true"></i></div>
+				<div class="barraPrincipal uno"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+				<div class="barraPrincipal uno"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+			</div>
+	</header>
+
+	<section >
+		<div class="parteDos">
+
+			<div class="tablero">
+			<h2>Tablero</h2>
+			<p><i class="fa fa-star-o" aria-hidden="true"></i></p>
+			<p class="menu"><i class="fa fa-lock" aria-hidden="true"></i></p>
+			</div>
+		
+			<!-- div de contenido dinamico -->
+
+			<div id="conten-formulario">
+				<button id="tarjeta" >Añadir tarjeta... <span class=""></span></button>
+
+				<form id="formu" class="noShow" action="javascript:void(0)" >
+				
+					<input type="text" name="formulario-lista" id="input" placeholder=" Agrega una Lista"> 
+
+					<button id="btnGuardar">Guardar</button>
+				</form>
+
+			</div>
+
+			<div id="cuadro" class="cont-dos noShow">
+				<p id="tituloNuevo"></p>
+				<p id="agrega">Añadir una tarea </p>
+			</div>
+
+		</div>
+	</section>
 
 
-<div>
-	<div id="users"><i class="fa fa-user-o" aria-hidden="true"></i></div>
-	<p>tableros personales</p>
-	
-</div>
-<div id="cont">
-	<div id="cont-formulario">
-		<button id="btn">agrega una tarjeta...</button>
-		<form id="formu" class="azul">
-			<input id="tarjeta" placeholder = "agregar una tarjeta...">
-			<button id="btnguardar">Guardar</button>
-		</form>
-	</div>
-</div>
 
-<script src="https://use.fontawesome.com/95443e83a8.js"></script>
-<script type="text/javascript" src="app.js"></script>
+
+<script src="app.js"></script>
 </body>
 </html>
